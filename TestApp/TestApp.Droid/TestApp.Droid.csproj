@@ -141,6 +141,7 @@
   <ItemGroup>
     <AndroidAsset Include="..\..\Data\my_texture.bmp">
       <Link>Assets\Data\my_texture.bmp</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidAsset>
   </ItemGroup>
   <ItemGroup>

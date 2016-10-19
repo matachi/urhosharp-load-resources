@@ -110,6 +110,7 @@
     <None Include="packages.config" />
     <BundleResource Include="..\..\Data\my_texture.bmp">
       <Link>Resources\Data\my_texture.bmp</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>

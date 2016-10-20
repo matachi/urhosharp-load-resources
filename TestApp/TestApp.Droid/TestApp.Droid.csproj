@@ -143,6 +143,10 @@
       <Link>Assets\Data\my_texture.bmp</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidAsset>
+    <AndroidAsset Include="..\..\Data\UrhoDecal.dds">
+      <Link>Assets\Data\UrhoDecal.dds</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestApp\TestApp.csproj">

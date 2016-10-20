@@ -45,21 +45,24 @@ namespace TestApp
                 Node cameraNode = _scene.CreateChild(name: "camera");
                 _camera = cameraNode.CreateComponent<Camera>();
 
-                var text = ResourceCache.GetTexture2D("my_texture.bmp");
-                Debug.WriteLine(
-                    text == null ? "### Did not find the texture ###" : "### Found the texture ###");
-
                 // Viewport
                 Renderer.SetViewport(0, new Viewport(Context, _scene, _camera, null));
 
-                var image = new BorderImage
+                UI.Root.AddChild(new BorderImage
                 {
-                    Texture = text,
+                    Texture = ResourceCache.GetTexture2D("my_texture.bmp"),
                     BlendMode = BlendMode.Add,
                     Size = new IntVector2(200, 200),
                     Position = new IntVector2(0, 0),
-                };
-                UI.Root.AddChild(image);
+                });
+
+                UI.Root.AddChild(new BorderImage
+                {
+                    Texture = ResourceCache.GetTexture2D("UrhoDecal.dds"),
+                    BlendMode = BlendMode.Add,
+                    Size = new IntVector2(200, 200),
+                    Position = new IntVector2(200, 0),
+                });
             }
         }
     }

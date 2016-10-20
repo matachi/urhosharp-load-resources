@@ -23,6 +23,8 @@ namespace TestApp
             private Scene _scene;
             private Camera _camera;
 
+            public UrhoApp(ApplicationOptions options = null) : base(options) { }
+
             protected override void Start()
             {
                 _scene = new Scene();
